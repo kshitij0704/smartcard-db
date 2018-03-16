@@ -1,0 +1,7 @@
+- alias: hasura
+  config:
+    configmap: controller-conf
+    namespace: blather62-hasura
+  data: null
+  kubeContext: blather62
+  name: blather62
