@@ -1,0 +1,9 @@
+- args:
+    sql: ALTER TABLE "transactions" ALTER COLUMN "sync_time" TYPE timestamptz;
+  type: run_sql
+- args:
+    sql: ALTER TABLE ONLY "transactions" ALTER COLUMN "sync_time" SET DEFAULT now();
+  type: run_sql
+- args:
+    sql: ALTER TABLE "transactions" ALTER COLUMN "sync_time" DROP NOT NULL;
+  type: run_sql

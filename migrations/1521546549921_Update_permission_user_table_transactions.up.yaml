@@ -1,0 +1,10 @@
+- args:
+    permission:
+      allow_upsert: true
+      check:
+        pos_id:
+          $in:
+          - X-HASURA-USER-ID
+    role: user
+    table: transactions
+  type: create_insert_permission
