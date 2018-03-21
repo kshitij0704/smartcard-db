@@ -1,0 +1,7 @@
+- args:
+    sql: CREATE TABLE "operators"("operator_id" text NOT NULL, "op_name" text NOT
+      NULL, "op_contact" text NOT NULL, PRIMARY KEY ("operator_id") )
+  type: run_sql
+- args:
+    name: operators
+  type: add_existing_table_or_view
