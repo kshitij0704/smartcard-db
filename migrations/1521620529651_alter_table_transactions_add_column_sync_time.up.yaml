@@ -1,0 +1,4 @@
+- args:
+    sql: ALTER TABLE "transactions" ADD COLUMN "sync_time" timestamptz NOT NULL DEFAULT
+      now()
+  type: run_sql

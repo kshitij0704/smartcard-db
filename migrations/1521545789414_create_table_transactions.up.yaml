@@ -1,0 +1,9 @@
+- args:
+    sql: CREATE TABLE "transactions"("trans_id" bigserial NOT NULL, "card_id" integer
+      NOT NULL, "value" integer NOT NULL, "service_id" text NOT NULL, "timestamp"
+      timestamptz NOT NULL DEFAULT now(), "authority_id" integer NOT NULL, PRIMARY
+      KEY ("trans_id") )
+  type: run_sql
+- args:
+    name: transactions
+  type: add_existing_table_or_view
