@@ -1,0 +1,4 @@
+- args:
+    sql: ALTER TABLE "transactions" ADD FOREIGN KEY ("operator_id") REFERENCES "operators"
+      ("operator_id")
+  type: run_sql
