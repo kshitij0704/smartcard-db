@@ -1,0 +1,7 @@
+- args:
+    sql: CREATE TABLE "issuance"("card_uid" text NOT NULL, "user_id" integer NOT NULL,
+      "owner_name" text , "owner_no" text , PRIMARY KEY ("card_uid") )
+  type: run_sql
+- args:
+    name: issuance
+  type: add_existing_table_or_view

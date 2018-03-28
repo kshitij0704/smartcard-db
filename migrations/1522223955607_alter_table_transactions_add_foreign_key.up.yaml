@@ -1,0 +1,4 @@
+- args:
+    sql: ALTER TABLE "transactions" ADD FOREIGN KEY ("card_uid") REFERENCES "issuance"
+      ("card_uid")
+  type: run_sql

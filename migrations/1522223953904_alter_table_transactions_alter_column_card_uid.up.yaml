@@ -1,0 +1,9 @@
+- args:
+    sql: ALTER TABLE "transactions" ALTER COLUMN "card_uid" TYPE text;
+  type: run_sql
+- args:
+    sql: ALTER TABLE "transactions" ALTER COLUMN "card_uid" DROP DEFAULT;
+  type: run_sql
+- args:
+    sql: ALTER TABLE "transactions" ALTER COLUMN "card_uid" SET NOT NULL;
+  type: run_sql

@@ -1,0 +1,3 @@
+- args:
+    sql: DROP VIEW "balance"
+  type: run_sql
