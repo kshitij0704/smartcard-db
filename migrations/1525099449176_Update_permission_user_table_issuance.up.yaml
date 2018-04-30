@@ -1,0 +1,9 @@
+- args:
+    permission:
+      filter:
+        pos_id:
+          $in:
+          - X-HASURA-USER-ID
+    role: user
+    table: issuance
+  type: create_delete_permission
